@@ -18,7 +18,7 @@
 <td>Pod with liveness probe</td>
 <td>create pod with livenessProbe</td>
 <td>creates nginx pod with liveness probe</td>
-<td><a href="app-livenessProbe.yaml">app.yaml</a></td>
+<td><a href="app-livenessProbe.yaml">app-livenessProbe.yaml</a></td>
 </tr>
 
 <tr class="even">
