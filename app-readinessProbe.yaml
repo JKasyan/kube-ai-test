@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod
+spec:
+  containers:
+    - name: example-container
+      image: nginx
+      readinessProbe:
+        httpGet:
+          path: /healthz
+          port: 80
+        initialDelaySeconds: 5
+        periodSeconds: 10

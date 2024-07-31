@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: example-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: example-container
+        image: alpine
+        command: ["sh", "-c", "echo Hello Kubernetes! > /mnt/volume/message.txt"]
+        volumeMounts:
+        - name: example-volume
+          mountPath: /mnt/volume
+      restartPolicy: Never
+      volumes:
+      - name: example-volume
+        emptyDir: {}
