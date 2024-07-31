@@ -11,7 +11,7 @@
 <td>Create pod</td>
 <td>create pod nginx</td>
 <td>creates pod nginx</td>
-<td>[app.yaml](app.yaml)</td>
+<td><a href="app.yaml">app.yaml</a></td>
 </tr>
 
 </tbody>
